@@ -2,20 +2,20 @@ import { SiteConfig } from '@/lib/site-config'
 import { DeepPartial } from '@/lib/utils'
 
 const userConfig: DeepPartial<SiteConfig> = {
-  siteUrl: 'https://zhutmost.com',
-  siteTitle: "Haozhe's Blog",
+  siteUrl: 'https://analog.paulapplegate.com',
+  siteTitle: "Live Life",
   description:
-    "This is Haozhe Zhu (@zhutmost)'s personal blog. I write about my research, thoughts, and life.",
+    "This is my piece on the internet. I write about my thoughts, and life.",
   locale: 'en-US',
-  author: 'Haozhe Zhu',
+  author: 'Paul Applegate',
   homepage: {
     sections: ['latestNews', 'recentPosts'],
     popularTags: [],
-    githubCalendar: 'zhutmost',
+    githubCalendar: '',
   },
   header: {
     logo: '/icon.svg',
-    title: "Haozhe's Blog",
+    title: "Paul's Blog",
     themeSwitch: true,
     menu: {
       Home: '/',
@@ -28,21 +28,21 @@ const userConfig: DeepPartial<SiteConfig> = {
   },
   footer: {
     icons: {
-      GitHub: { icon: 'IconBrandGithub', href: 'https://github.com/zhutmost' },
+      GitHub: { icon: 'IconBrandGithub', href: 'https://github.com/theapplegates' },
       RSS: { icon: 'IconRss', href: '/rss.xml' },
       Analytics: {
         icon: 'IconChartDots',
-        href: 'https://cloud.umami.is/share/Xhuqb7y5CtlUaz3U/blog.zhutmost.com',
+        href: '',
       },
     },
   },
   analytics: {
     umamiAnalytics: {
-      umamiWebsiteId: 'd4fee704-edd5-4eee-bc79-5dd8fa412c2b',
+      umamiWebsiteId: '',
     },
   },
   comment: {
-    provider: 'giscus',
+    provider: '',
     giscusConfig: {
       repo: 'zhutmost/zhutmost-blog',
       repoId: 'R_kgDONUD9-A',
