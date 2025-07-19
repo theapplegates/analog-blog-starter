@@ -41,14 +41,6 @@ const userConfig: DeepPartial<SiteConfig> = {
       umamiWebsiteId: '',
     },
   },
-  comment: {
-    provider: '',
-    giscusConfig: {
-      repo: 'zhutmost/zhutmost-blog',
-      repoId: 'R_kgDONUD9-A',
-      category: 'Announcements',
-      categoryId: 'DIC_kwDONUD9-M4Ckkm1',
-    },
   },
   seo: {
     socialBanner: '/banner-zhutmost-com.png',
