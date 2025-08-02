@@ -2,12 +2,12 @@ import { SiteConfig } from '@/lib/site-config'
 import { DeepPartial } from '@/lib/utils'
 
 const userConfig: DeepPartial<SiteConfig> = {
-  siteUrl: 'https://analog-demo.zhutmost.com',
-  siteTitle: 'Analog Demo',
+  siteUrl: 'https://analog.paulapplegate.com',
+  siteTitle: 'Living Life',
   description:
     'Explore Analog: An open-source blog template built with Next.js by zhutmost. Perfect for technical contents, research teams, and academic blogs. Modern, SEO-optimized, and fully customizable.',
   locale: 'en-US',
-  author: 'John Doe',
+  author: 'Paul Applegate',
   homepage: {
     sections: ['latestNews', 'popularTags', 'recentPosts'],
     popularTags: [
@@ -17,7 +17,7 @@ const userConfig: DeepPartial<SiteConfig> = {
       { tag: 'writing', icon: 'IconNote', title: 'Writing' },
       { tag: 'windows', icon: 'IconBrandWindows', title: 'Windows' },
     ],
-    githubCalendar: 'zhutmost',
+    githubCalendar: '',
   },
   header: {
     logo: '/icon.svg',
@@ -42,20 +42,6 @@ const userConfig: DeepPartial<SiteConfig> = {
         icon: 'IconChartDots',
         href: 'https://cloud.umami.is/share/unndQ4BKaNaSgfys/analog-demo.zhutmost.com',
       },
-    },
-  },
-  analytics: {
-    umamiAnalytics: {
-      umamiWebsiteId: '4ae56858-7872-446f-980e-32d1c8db927e',
-    },
-  },
-  comment: {
-    provider: 'giscus',
-    giscusConfig: {
-      repo: 'zhutmost/analog-blog-starter',
-      repoId: 'R_kgDONEFqpw',
-      category: 'Announcements',
-      categoryId: 'DIC_kwDONEFqp84CjmEV',
     },
   },
   license: 'cc-by-nc-sa',

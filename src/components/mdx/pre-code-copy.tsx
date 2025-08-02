@@ -17,12 +17,12 @@ export default function PreCodeCopy({ children, ...rest }: React.HTMLAttributes<
     setHovered(false)
     setCopied(false)
   }
-  const onCopy = () => {
+const onCopy = () => {
     if (textInput.current) {
       setCopied(true)
       void navigator.clipboard
-        .writeText(textInput.current.textContent!)
-        .catch((error: unknown) => {
+        .writeText(textInput.current.textContent || '')  // Remove ! and use || ''
+        .catch((error: unknown) => {  // Add back ": unknown"
           console.error('Failed to copy code snippet: ', error)
           setCopied(false)
         })
@@ -33,7 +33,6 @@ export default function PreCodeCopy({ children, ...rest }: React.HTMLAttributes<
         })
     }
   }
-
   return (
     <div ref={textInput} onMouseEnter={onEnter} onMouseLeave={onExit} className="relative">
       {hovered && (

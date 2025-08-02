@@ -72,5 +72,12 @@
     "typed.js": "^2.1.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.35.1"
-  }
+  },
+  "trustedDependencies": [
+    "@parcel/watcher",
+    "@tailwindcss/oxide",
+    "contentlayer2",
+    "protobufjs",
+    "unrs-resolver"
+  ]
 }

@@ -79,11 +79,11 @@ const twConfig: TwConfig = {
     extend: {
       fontFamily: {
         sans: [
-          'var(--font-space-grotesk)',
-          'var(--font-noto-sans-sc)',
+          'var(--font-wotfardregular)',
+          'var(--font-wotfard-light-webfont)',
           ...defaultTheme.fontFamily.sans,
         ],
-        mono: ['var(--font-jetbrains-mono)', ...defaultTheme.fontFamily.mono],
+        mono: ['var(--font-GeistMono)', ...defaultTheme.fontFamily.mono],
       },
       borderRadius: {
         lg: 'var(--radius)',
