@@ -61,16 +61,12 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const customFontVariables: string[] = Object.values(customFontFamily)
-    .flat()
-    .map((font) => font.variable)
-
   return (
     <html lang={siteConfig.locale} suppressHydrationWarning>
       <body
         className={cn(
           'min-h-screen bg-background font-sans text-foreground antialiased',
-          customFontVariables
+          customFontFamily.wotfard.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

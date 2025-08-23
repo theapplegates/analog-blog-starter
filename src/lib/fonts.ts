@@ -1,28 +1,84 @@
-import { NextFontWithVariable } from 'next/dist/compiled/@next/font'
-import { JetBrains_Mono, Noto_Sans_SC, Space_Grotesk } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const fontSpaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
+const wotfardFont = localFont({
+  src: [
+    {
+      path: '../../public/fonts/wotfard-thin-webfont.woff2',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/wotfard-thinitalic-webfont.woff2',
+      weight: '100',
+      style: 'italic',
+    },
+    {
+      path: '../../public/fonts/wotfard-extralight-webfont.woff2',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/wotfard-extralightitalic-webfont.woff2',
+      weight: '200',
+      style: 'italic',
+    },
+    {
+      path: '../../public/fonts/wotfard-light-webfont.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/wotfard-lightitalic-webfont.woff2',
+      weight: '300',
+      style: 'italic',
+    },
+    {
+      path: '../../public/fonts/wotfard-regular-webfont.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/wotfard-regularitalic-webfont.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../../public/fonts/wotfard-medium-webfont.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/wotfard-mediumitalic-webfont.woff2',
+      weight: '500',
+      style: 'italic',
+    },
+    {
+      path: '../../public/fonts/wotfard-semibold-webfont.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/wotfard-semibolditalic-webfont.woff2',
+      weight: '600',
+      style: 'italic',
+    },
+    {
+      path: '../../public/fonts/wotfard-bold-webfont.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/wotfard-bolditalic-webfont.woff2',
+      weight: '700',
+      style: 'italic',
+    },
+  ],
   display: 'swap',
-  variable: '--font-space-grotesk',
-})
-
-const fontNotoSansSC = Noto_Sans_SC({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-noto-sans-sc',
-})
-
-const fontJetBrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-jetbrains-mono',
+  variable: '--font-wotfard',
 })
 
 const customFontFamily = {
-  sans: [fontNotoSansSC, fontSpaceGrotesk],
-  mono: [fontJetBrainsMono],
-  serif: [] as NextFontWithVariable[],
+  wotfard: wotfardFont,
 }
 
 export default customFontFamily

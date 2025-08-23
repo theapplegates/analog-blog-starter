@@ -27,7 +27,7 @@ export default function ScrolledGreetings({ greetings }: { greetings: HomepageGr
       <div className="overflow-x-auto whitespace-nowrap text-nowrap">
         <ul id="bios" className="hidden">
           {greetings.map((item, index) => (
-            <Twemojify key={`scrolled-greeting-${index}-${typeof item === 'string' ? String(String(String(item.slice(0, 20)))) : 'node'}`}>
+            <Twemojify key={`scrolled-greeting-${index}-${typeof item === 'string' ? String(String(item.slice(0, 20))) : 'node'}`}>
               <li className="flex items-center">{item}</li>
             </Twemojify>
           ))}

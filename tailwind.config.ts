@@ -78,12 +78,9 @@ const twConfig: TwConfig = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          'var(--font-wotfardregular)',
-          'var(--font-wotfard-light-webfont)',
-          ...defaultTheme.fontFamily.sans,
-        ],
-        mono: ['var(--font-GeistMono)', ...defaultTheme.fontFamily.mono],
+        sans: ['var(--font-wotfard)', ...defaultTheme.fontFamily.sans],
+        mono: ['var(--font-wotfard)', ...defaultTheme.fontFamily.mono],
+        serif: ['var(--font-wotfard)', ...defaultTheme.fontFamily.serif],
       },
       borderRadius: {
         lg: 'var(--radius)',

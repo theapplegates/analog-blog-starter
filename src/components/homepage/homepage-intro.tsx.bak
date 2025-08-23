@@ -32,7 +32,7 @@ export default function HomepageIntro() {
       </h1>
       <div className="text-lg text-muted-foreground">
         {homepageGreetings.fixed.map((item, index) => (
-          <Twemojify key={`fixed-greeting-${index}-${typeof item === 'string' ? String(String(String(item.slice(0, 20)))) : 'node'}`}>
+          <Twemojify key={`fixed-greeting-${index}-${typeof item === 'string' ? String(String(item.slice(0, 20))) : 'node'}`}>
             <p>{item}</p>
           </Twemojify>
         ))}
