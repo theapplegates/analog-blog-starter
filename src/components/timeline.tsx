@@ -56,7 +56,7 @@ export default function Timeline({ timelineNews, findMore = false }: TimelinePro
   return (
     <div className="-my-6">
       {timelineNews.map((news, index) => (
-        <TimelineItem {...news} key={`timeline-${String(news.date.getTime())}-${typeof news.title === 'string' ? String(news.title.slice(0, 20)) : String(index)}`} />
+        <TimelineItem {...news} key={`timeline-${String(news.date.getTime())}-${typeof news.title === 'string' ? news.title.slice(0, 20) : String(index)}`} />
       ))}
       {findMore && (
         <div className="group relative pb-6 pl-8 pt-2 sm:pl-32">

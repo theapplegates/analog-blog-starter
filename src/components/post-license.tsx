@@ -86,7 +86,7 @@ export default function PostLicense({ post, authors }: PostLicenseProps) {
             <a href={licenseLink} rel="noopener noreferrer" target="_blank">
               <span className="sr-only">{licenseMerged}</span>
               {licenseIcons[licenseMerged].map((Icon, index) => (
-                <Icon key={`license-icon-${String(licenseMerged)}-${String(Icon.name || index)}`} className="inline-block" />
+                <Icon key={`license-icon-${licenseMerged}-${Icon.name || String(index)}`} className="inline-block" />
               ))}
             </a>
           </p>
