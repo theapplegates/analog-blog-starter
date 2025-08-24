@@ -6,7 +6,7 @@ import { Plugin } from 'unified'
 import { visit } from 'unist-util-visit'
 
 export interface rehypeAssetCopyOptions {
-  assetPath: string
+  assetpath: string
 }
 
 function copyFolder(src: string, dest: string): void {
@@ -29,7 +29,7 @@ function copyFolder(src: string, dest: string): void {
 
 export function assetSourceRedirect(
   src: string | undefined,
-  assetPath: string
+  assetpath: string
 ): string | undefined {
   if (!src || src.startsWith('http') || src.startsWith('/')) {
     return src
