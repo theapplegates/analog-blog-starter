@@ -17,7 +17,7 @@ const timelineNews2024: TimelineItemProps[] = [
     description:
       'GauSPU is a HW/SW-cooptimized GPU extension aiming to realize real-time pose tracking in 3D Gaussian Spltting-based SLAM systems. ',
     icons: {
-      // PDF: { icon: 'IconFileTypePdf', href: '/publications/2024 MICRO GauSPU.pdf' },
+      // PDF: { icon: 'IconFileTypePdf', href: '/ations/2024 MICRO GauSPU.pdf' },
     },
   },
   {
@@ -33,14 +33,14 @@ const timelineNews2024: TimelineItemProps[] = [
     description:
       'We presented two works, a Logarithmic FP CIM macro and a LUT-based CIM macro. The latter, Trident-CIM, was invited to transfer to TCAS-II.',
     icons: {
-      // 'LogFP-CIM PDF': { icon: 'IconFileTypePdf', href: '/publications/2025 ISCAS LogFP-CIM.pdf' },
+      // 'LogFP-CIM PDF': { icon: 'IconFileTypePdf', href: '/ations/2025 ISCAS LogFP-CIM.pdf' },
       // 'LogFP-CIM IEEExplore': {
       //   icon: 'IconLink',
       //   href: 'https://doi.org/10.1109/ISCAS58744.2024.10558433',
       // },
       // 'Trident-CIM PDF': {
       //   icon: 'IconFileTypePdf',
-      //   href: '/publications/2024 TCAS-II Trident-CIM.pdf',
+      //   href: '/ations/2024 TCAS-II Trident-CIM.pdf',
       // },
       // 'Trident-CIM IEEExplore': {
       //   icon: 'IconLink',
@@ -54,7 +54,7 @@ const timelineNews2024: TimelineItemProps[] = [
     description:
       'We propose SLAM-CIM, a Compute-in-Memory based visual SLAM backend processor for edge robotics. It features SRAM-based FP16 digital CIM macros supporting both MAC and linear solving.',
     icons: {
-      // PDF: { icon: 'IconFileTypePdf', href: '/publications/2024 JSSC SLAM-CIM.pdf' },
+      // PDF: { icon: 'IconFileTypePdf', href: '/ations/2024 JSSC SLAM-CIM.pdf' },
       // IEEExplore: { icon: 'IconLink', href: 'https://doi.org/10.1109/JSSC.2024.3402808' },
     },
   },
